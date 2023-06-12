@@ -4,7 +4,7 @@ Made By :
 - Ekmal Reyhan Tarihoran || 1305223079
 - Yunita || 1305220067
 
-This Program Is Build According To This:
+This Program Is Built According To This:
 
 **Description :**  The application is used to manage data of patients who do medical check up. The data processed is data
 service packages as well as patient data that performs medical check up. Application users are hospital officers or
