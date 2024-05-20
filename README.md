@@ -3,7 +3,6 @@
 A Command Line Interface For My Final Project Of The Course Programming Algorithm
 Made By :
 - Ekmal Reyhan Tarihoran || 1305223079
-- Yunita || 1305220067
 
 This Program Is Built According To This:
 
