@@ -95,10 +95,10 @@ func binarySearchPatientByID(id int) int {
 cd MedicalCheckUp
 
 # Run the main program
-go run main_optimized.go
+go run main.go
 
 # Or build an executable
-go build -o medical.exe main_optimized.go
+go build -o medical.exe main.go
 ./medical.exe
 ```
 
@@ -110,18 +110,20 @@ go build -o medical.exe main_optimized.go
 5. Check out the reports section
 6. Data saves automatically when you exit
 
-## � **Project Structure**
+## 📁 **Project Structure**
 
 ```
 MedicalCheckUp/
-├── 📄 main_optimized.go           # Main program (improved version)
+├── 📄 main.go                     # Main program (optimized version)
+├── 📄 go.mod                      # Go module file
 ├── 📁 Archive/
-│   ├── 📄 main.go                 # Original version
+│   ├── 📄 main_old.go             # Original version (with color dependency)
 │   └── 📄 MedicalCheckUp.exe      # Pre-built executable
 ├── 📁 tests/
-│   ├── 📄 test_functionality.go   # Test suite
-│   ├── 📄 run_tests.bat          # Test runner scripts
-│   └── 📄 TESTING_README.md      # Testing guide
+│   ├── 📄 unit_test.go            # Comprehensive test suite
+│   ├── 📄 run_tests.bat           # Test runner script
+│   ├── 📄 coverage.out            # Test coverage data (generated)
+│   └── 📄 test_results.txt        # Test results (generated)
 ├── 📄 README.md                   # This file
 └── 📄 data.json                   # Data storage (created automatically)
 ```
@@ -162,12 +164,29 @@ It's a solid demonstration of fundamental programming skills and problem-solving
 
 ## 🧪 **Testing**
 
-The project includes a test suite in the `tests/` folder. You can run it to see the code quality and functionality:
+The project includes a comprehensive test suite in the `tests/` folder. You can run it to see the code quality and functionality:
 
 ```bash
+# Navigate to tests folder and run the test suite
 cd tests
-go run test_functionality.go
+./run_tests.bat
+
+# Or run tests manually
+go test -v ./tests/
+
+# Generate test coverage report
+go test -cover -coverprofile=tests/coverage.out ./tests/
+go tool cover -html=tests/coverage.out
 ```
+
+The test suite covers:
+- Date validation functions
+- ID generation algorithms  
+- Search functions (sequential and binary)
+- Sorting algorithms (selection and insertion)
+- Data persistence (save/load)
+- Edge cases and boundary conditions
+- Performance benchmarks
 
 ---
 
