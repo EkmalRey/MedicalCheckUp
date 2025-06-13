@@ -1,0 +1,32 @@
+=== RUN   TestIsLeapYear
+--- PASS: TestIsLeapYear (0.00s)
+=== RUN   TestIsValidDate
+--- PASS: TestIsValidDate (0.00s)
+=== RUN   TestGetNextPatientID
+--- PASS: TestGetNextPatientID (0.00s)
+=== RUN   TestGetNextPackageID
+--- PASS: TestGetNextPackageID (0.00s)
+=== RUN   TestGetNextRecordID
+--- PASS: TestGetNextRecordID (0.00s)
+=== RUN   TestSequentialSearchPatientByName
+--- PASS: TestSequentialSearchPatientByName (0.00s)
+=== RUN   TestSequentialSearchPackageByName
+--- PASS: TestSequentialSearchPackageByName (0.00s)
+=== RUN   TestBinarySearchPatientByID
+--- PASS: TestBinarySearchPatientByID (0.00s)
+=== RUN   TestBinarySearchPackageByID
+--- PASS: TestBinarySearchPackageByID (0.00s)
+=== RUN   TestSelectionSortPatientsByName
+--- PASS: TestSelectionSortPatientsByName (0.00s)
+=== RUN   TestSelectionSortPackagesByPrice
+--- PASS: TestSelectionSortPackagesByPrice (0.00s)
+=== RUN   TestInsertionSortRecordsByDate
+--- PASS: TestInsertionSortRecordsByDate (0.00s)
+=== RUN   TestSaveAndLoadData
+--- PASS: TestSaveAndLoadData (0.02s)
+=== RUN   TestEmptyArrayOperations
+--- PASS: TestEmptyArrayOperations (0.00s)
+=== RUN   TestCompleteWorkflow
+--- PASS: TestCompleteWorkflow (0.01s)
+PASS
+ok  	medicalcheckup/tests	(cached)
